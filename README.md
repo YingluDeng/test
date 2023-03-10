@@ -1,1 +1,200 @@
 # test
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- entity codes  -->
+        <h1>1 &lt; 6 &gt; 5 &amp;</h1>
+
+        <section>
+            <h1>All About Chicken</h1>
+            <!-- here insert picc -->
+            <img src="Male_and_female_chicken_sitting_together.jpeg" width="200px" alt="chicken 1">
+            
+            <hr>
+
+            <p>Chickens are one of the most common and widespread domestic animals, with a total population of 23.7 billion as of
+            2018,<sup><a href="story.html">[2]</a></sup> up from more than 19 billion in 2011. <br>
+
+            There are more chickens in the world than any other bird. There are
+            numerous cultural references to chickens—in myth, folklore and religion, and in language and literature.</p>
+
+            <a href="https://en.wikipedia.org/wiki/Chicken">chicken link</a><br>
+            <a href="story.html">Story Details</a>
+
+            <ul>
+                <li>apple</li>
+                <li>apple</li>
+                <li>apple</li>
+                <li>apple</li>
+
+            </ul>
+            <p><sup>1</sup>/<sub>2</sub></p>
+        </section>
+    </main>
+
+    <h1>Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">City</th> 
+                <th colspan="2">Country</th>
+                <th rowspan="2">UN 2018 population estimates</th>
+            </tr>
+
+            <tr>
+                <th>A</th>
+                <th>B</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Delhi</td>
+                <td>India</td>
+                <td>28,514,000</td>
+            </tr>
+
+            <tr>
+                <td>Tokyo</td>
+                <td>Japan</td>
+                <td>37,468,000</td>
+            </tr>
+
+            <tr>
+                <td>Shanghai</td>
+                <td>China</td>
+                <td>25,582,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1>Form</h1>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username: </label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Username: </label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </p>
+        
+        <input type="color" name="color"><br>
+        <input type="number" placeholder="enter a number" name="number"><br>
+        
+        <h1>Button</h1>
+        <button>Submit</button>
+        <input type="submit" value="Click Me">
+    </form>
+
+    <h1>Search Form</h1>
+    <!-- https://www.google.com/search?q=pizza -->
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <br>
+    <!-- https://www.youtube.com/results?search_query=das -->
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search YouTube</button>
+    </form>
+
+    <form action="https://www.youtube.com/results">
+        <h3>Search on YouTube Click "return"</h3>
+        <input type="text" name="search_query">
+        <!-- <button>Search YouTube</button> -->
+    </form>
+    
+    
+    <form action="/birds">
+        <h1>Check Box</h1>
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree"> I agree. </label>
+        <button>Submit</button>
+
+        <h1>Radio Button</h1>
+        <p>
+            <label for="xs"> XS: </label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <br>
+            <label for="s"> S: </label>
+            <input type="radio" name="size" id="s" value="s">
+            <br>
+            <label for="m"> M: </label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+
+        <h1>Select Drop Down</h1>
+        <p>
+            <label for="meal">Please Select an Entree: </label><br>
+            <select name="meal" id="meal">
+                <option value="">--Please choose an option--</option>
+                <option value="fish">Fish</option>
+                <option value="shrimp">Shrimp</option>
+                <option value="hotpot">HotPot</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cake">Amount of cake:</label>
+            <input type="range" id="cake" min="1" max="10" name="cake_num">
+        </p>
+
+        <p>
+            <label for="suggest">Suggestion?</label><br>
+            <textarea id="suggest" rows="10" cols="40" name="Suggestion?" placeholder="Type something here..."></textarea>
+        </p>
+
+        <form>
+            <p>
+                <label for="first">Enter First Name: </label>
+                <input type="text" name="first" id="first" required>
+            </p>
+            <p>
+                <label for="last">Enter Last Name: </label>
+                <input type="text" name="last" id="last" required>
+            </p>
+            <p>
+                <label for="username">Enter Username: </label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="10" required>
+            </p>
+
+            <p>
+                <label for="email">Enter Email: </label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="url">Enter url: </label>
+                <input type="url" id="url" name="url" required>
+            </p> 
+            <button>submit</button>
+        </form>
+        
+    </form>
+
+    
+    <!-- <form action=""><input type="text"></form> -->
+
+</body>
+    
+</html>
